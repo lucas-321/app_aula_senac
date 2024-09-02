@@ -35,7 +35,7 @@
 .top-nav {
     width: 100%;
     height: 60px;
-    background: var(--gelo);
+    background: var(--branco);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,3 +84,78 @@
 .btn-cart[data-count="0"]::before {
     display: none;
 }
+
+a {
+    color: var(--verde);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+form {
+    padding-top: 10px;
+    background: var(--branco);
+    padding-bottom: 20px;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    margin: auto;
+    background: var(--gelo);
+    padding: .5rem;
+}
+
+::placeholder {
+    color: #b3afaf;
+}
+
+.icone-busca {
+    position: absolute;
+    top: 0px;
+    right: 5%;
+    font-size: 27px;
+    padding: 13px;
+}
+
+
+
+/* Swiper */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* End Swiper */
