@@ -236,3 +236,16 @@ body {
 .bold {
     font-weight: 800;
 }
+
+@media (min-width: 992px) {
+    .item-card {
+        flex: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .item-card {
+        flex: 20%;
+    }
+}
+
