@@ -1,0 +1,34 @@
+:root {
+    --branco: #ffff;
+    --gelo: #f1f1f1;
+    --verde: #19c463;
+    --preto: #2a2a2a;
+}
+
+.nav-top.cart {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--branco);
+    padding: 10px 0px;
+}
+
+.nav-top.cart a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gelo);
+    border-radius: 50%;
+    color: var(--preto);
+}
+
+.nav-top a:first-child {
+    margin-left: 20px;
+}
+
+.nav-top a:last-child {
+    margin-right: 20px;
+}

@@ -97,6 +97,25 @@
     color: var(--verde);
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 1px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+th {
+    background: #ddd;
+}
+
 .color-gray {
     color: gray;
 }
