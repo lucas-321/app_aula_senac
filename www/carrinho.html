@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Template Tab</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!--Ícones Remix Icon-->
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="carrinho" class="page color-theme-blue">
+
+                <!-- Scrollable page content -->
+                <div class="nav-top cart">
+                    <a href="/index/"><i class="ri-arrow-left-s-line"></i></a>
+                    <strong><i class="ri-shopping-cart-2-line"></i>Carrinho</strong>
+                    <a href="#"><i class="ri-more-fill"></i></a>
+                </div>
+                <!--TAB BAR-->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner">
+                        <div class="flex-100">
+                            <button class="add-cart">Comprar 😎</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div id="listaCarrinho">
+                        <div class="item-carrinho">
+
+                            <div class="area-img">
+                                <img src="img/default.png">
+                            </div>
+
+                            <div class="area-details">
+
+                                <div class="sup">
+                                    <span class="name-prod">
+                                        Xbox Series X
+                                    </span>
+                                    <a class="delete-item" href="#">
+                                        <i class="mdi mdi-close"></i>
+                                    </a>
+                                </div>
+
+                                <div class="middle">1 TB</div>
+
+                                <div class="preco-quantidade">
+                                    <span>R$ 2900</span>
+                                    <div class="count">
+                                        <a href="#" class="minus">-</a>
+                                        <input type="text" class="qtd-item" value="1">
+                                        <a href="#" class="plus">+</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
