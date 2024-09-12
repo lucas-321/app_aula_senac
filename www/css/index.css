@@ -15,6 +15,10 @@
     flex-flow: column wrap;
 }
 
+.toolbar-inner {
+    background: var(--branco);
+}
+
 .toolbar-inner .link{
     flex: 1;
     height: 80px;
