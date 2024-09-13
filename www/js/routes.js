@@ -24,7 +24,7 @@ var app = new Framework7({
       on: {
       pageBeforeIn: function (event, page) {
         // fazer algo antes da página ser exibida
-        app.views.main.router.navigate('/carrinho/');
+        app.views.main.router.navigate('/index/');
         $("#menuPrincipal").show("fast");
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 1,
