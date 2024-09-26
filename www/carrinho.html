@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/carrinho.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
-    <!--Ícones Remix Icon-->
+    <!--Ícones Remix Icons-->
     <link rel="stylesheet" href="css/remixicon/remixicon.css">
 
 
@@ -33,7 +33,7 @@
         <div class="view view-main">
 
             <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="carrinho" class="page color-theme-blue">
+            <div data-name="detalhes" class="page color-theme-blue">
 
                 <!-- Scrollable page content -->
                 <div class="nav-top cart">
@@ -43,55 +43,54 @@
                 </div>
 
                 <!--ÚLTIMO TAB BAR-->
-                <div style="margin-bottom: 100px;" class="toolbar toolbar-bottom">
+                <div id="toolbarTotais" style="margin-bottom: 100px;" class="toolbar toolbar-bottom">
                     <div id="totais" class="toolbar-inner display-flex align-items-center justify-content-center">
                         <div class="bd-bottom margin-top w-80 display-flex justify-content-space-between">
                             <span>Subtotal:</span>
-                            <span class="bold">R$ 800</span>
+                            <span id="subtotal" class="bold">R$ 800</span>
                         </div>
 
                         <div class="w-80 display-flex justify-content-space-between">
                             <span>Frete:</span>
-                            <span>R$ 10</span>
+                            <span class="bold">R$ 10</span>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- POPOVER MENU -->
                 <div class="popover popover-menu">
                     <div class="popover-angle"></div>
                     <div class="popover-inner">
                       <div class="list">
                         <ul>
-                            <li>
-                                <a id="esvaziar" href="#" class="list-button popover-close">
-                                    <i class="mdi mdi-broom"></i> Esvaziar Carrinho
-                                </a>
-                            </li>
+                          <li>
+                            <a id="esvaziar" href="#" class="list-button popover-close">
+                                <i class="mdi mdi-broom"></i> Esvaziar Carrinho
+                            </a>
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </div>
 
-                <!--TAB BAR-->
-                <div class="toolbar toolbar-bottom">
+                <!-- TAB BAR-->
+                <div id="toolbarCheckout" class="toolbar toolbar-bottom">
                     <div class="toolbar-inner display-flex align-items-center justify-content-center">
                         <div class="flex-100">
                             <button class="add-cart">Comprar 😎</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Scrollable page content -->
                 <div class="page-content">
                     <div id="listaCarrinho">
-                        <div class="item-carrinho">
-
+                        <!-- ITEM DO CARRINHO -->
+                         <div class="item-carrinho">
                             <div class="area-img">
                                 <img src="img/default.png">
                             </div>
-
                             <div class="area-details">
-
                                 <div class="sup">
                                     <span class="name-prod">
                                         Xbox Series X
@@ -100,30 +99,23 @@
                                         <i class="mdi mdi-close"></i>
                                     </a>
                                 </div>
-
                                 <div class="middle">1 TB</div>
-
                                 <div class="preco-quantidade">
-                                    <span>R$ 2900</span>
+                                    <span>R$ 99.500</span>
                                     <div class="count">
                                         <a href="#" class="minus">-</a>
-                                        <input type="text" class="qtd-item" value="1">
+                                        <input readonly type="text" class="qtd-item" value="1">
                                         <a href="#" class="plus">+</a>
                                     </div>
                                 </div>
-
                             </div>
+                         </div>
 
-                        </div>
-
-                        <div class="item-carrinho">
-
+                         <div class="item-carrinho">
                             <div class="area-img">
                                 <img src="img/default.png">
                             </div>
-
                             <div class="area-details">
-
                                 <div class="sup">
                                     <span class="name-prod">
                                         Xbox Series X
@@ -132,60 +124,23 @@
                                         <i class="mdi mdi-close"></i>
                                     </a>
                                 </div>
-
                                 <div class="middle">1 TB</div>
-
                                 <div class="preco-quantidade">
-                                    <span>R$ 2900</span>
+                                    <span>R$ 99.500</span>
                                     <div class="count">
                                         <a href="#" class="minus">-</a>
-                                        <input type="text" class="qtd-item" value="1">
+                                        <input readonly type="text" class="qtd-item" value="1">
                                         <a href="#" class="plus">+</a>
                                     </div>
                                 </div>
-
                             </div>
-
-                        </div>
-
-                        <div class="item-carrinho">
-
-                            <div class="area-img">
-                                <img src="img/default.png">
-                            </div>
-
-                            <div class="area-details">
-
-                                <div class="sup">
-                                    <span class="name-prod">
-                                        Xbox Series X
-                                    </span>
-                                    <a class="delete-item" href="#">
-                                        <i class="mdi mdi-close"></i>
-                                    </a>
-                                </div>
-
-                                <div class="middle">1 TB</div>
-
-                                <div class="preco-quantidade">
-                                    <span>R$ 2900</span>
-                                    <div class="count">
-                                        <a href="#" class="minus">-</a>
-                                        <input type="text" class="qtd-item" value="1">
-                                        <a href="#" class="plus">+</a>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
+                         </div>
                     </div>
-
-                    
                 </div>
-                
+
+
+
             </div>
-            
         </div>
     </div>
     <!-- Path to Framework7 Library Bundle JS-->
